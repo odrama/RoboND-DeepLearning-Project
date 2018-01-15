@@ -10,6 +10,7 @@ The encoder stage is used for capturing the important features, with each deeper
 - Each Decoder layer consists of a `bilinear upsample` layer, then the output is concatenated with an encoder layer, followed by two `seperable convolution` layers. Those are used to upsample the data to higher resolutions.
 
 
+Each of those were implemented in their respective functions provided by the starter code, undert he `TODO`s
 
 
 #add model architecture#
@@ -33,3 +34,14 @@ Those remaining three parameters were left as was recommended, except number of 
 - validation_steps = 50
 - workers = 4
 
+
+
+**The student demonstrates a clear understanding of 1 by 1 convolutions and where/when/how it should be used.**
+
+
+**The student demonstrates a clear understanding of a fully connected layer and where/when/how it should be used.**
+
+**The student is able to identify the use of various reasons for encoding / decoding images, when it should be used, why it is useful, and any problems that may arise.**
+
+
+**The student is able to clearly articulate whether this model and data would work well for following another object (dog, cat, car, etc.) instead of a human and if not, what changes would be required.**

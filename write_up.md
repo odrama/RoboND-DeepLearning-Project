@@ -38,10 +38,31 @@ Those remaining three parameters were left as was recommended, except number of 
 
 **The student demonstrates a clear understanding of 1 by 1 convolutions and where/when/how it should be used.**
 
+1 x 1 convultions are used instead of FC layers because they preserve the spatial information of the image, which is important to us, since we not only are interested in classifying the object of interest, but also its location in the image.
 
 **The student demonstrates a clear understanding of a fully connected layer and where/when/how it should be used.**
 
-**The student is able to identify the use of various reasons for encoding / decoding images, when it should be used, why it is useful, and any problems that may arise.**
+Fully connected layers should be used when the spatial information is to be disregarded and when we are only interested in the classification of an object.
 
 
 **The student is able to clearly articulate whether this model and data would work well for following another object (dog, cat, car, etc.) instead of a human and if not, what changes would be required.**
+
+The model would not work well on any other object, since it was only trained to recognize the hero in the red outfit. In order to make it do so, retraining from scratch with appropriate relevant classified data to the target would be used. Another idea would be to freeze the weights of for example the first four or five layers and only retrain the fifth and the 1x1 convolution layer. As the early layers contain basic geometries and nothing very specific.
+
+
+
+
+**Data used**
+
+Udacity default provided dataset
+
+
+During the early trials, i designed a small network, which could not give me good results, but after searching through slack and getting some advice, i implemented a deeper network, which increased the accuracy tremendously using only the provided dataset
+
+
+**Future improvements**
+
+- Adding manually connected good data
+- Experimenting with already successful network architectures such as AlexLeNet and Vgg
+
+

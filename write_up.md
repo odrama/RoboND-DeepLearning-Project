@@ -18,7 +18,6 @@ Each of those were implemented in their respective functions provided by the sta
 The following figure depicts the model architecture:
 
 ![model][image1]
-![DH Parameter Table][image5]
 
 **The student explains their neural network parameters including the values selected and how these values were obtained (i.e. how was hyper tuning performed? Brute force, etc.) Hyper parameters include, but are not limited to:**
 

@@ -1,3 +1,5 @@
+[image1]: ./model.png
+
 **The student clearly explains each layer of the network architecture and the role that it plays in the overall network. The student can demonstrate the benefits and/or drawbacks of different network architectures pertaining to this project and can justify the current network with factual data. Any choice of configurable parameters should also be explained in the network architecture.**
 
 - The network follows a `Fully Convolutional` architecure consisting of 5 encoder layers, a 1x1 convolution layer, and 5 decoder layers. The reason for using an `FCN` rather than a normal `CNN` followed by a `Fully connected` layer and a softmax activation funciton, is that we need to find out WHERE an object is in an image, rather than just WHICH object is it, i.e: classification.
@@ -10,10 +12,12 @@ The encoder stage is used for capturing the important features, with each deeper
 - Each Decoder layer consists of a `bilinear upsample` layer, then the output is concatenated with an encoder layer, followed by two `seperable convolution` layers. Those are used to upsample the data to higher resolutions.
 
 
-Each of those were implemented in their respective functions provided by the starter code, undert he `TODO`s
+Each of those were implemented in their respective functions provided by the starter code, under the `TODO`s.
 
 
-#add model architecture#
+The following figure depicts the model architecture:
+
+![model] [image1]
 
 **The student explains their neural network parameters including the values selected and how these values were obtained (i.e. how was hyper tuning performed? Brute force, etc.) Hyper parameters include, but are not limited to:**
 

@@ -14,4 +14,22 @@ The encoder stage is used for capturing the important features, with each deeper
 
 #add model architecture#
 
+**The student explains their neural network parameters including the values selected and how these values were obtained (i.e. how was hyper tuning performed? Brute force, etc.) Hyper parameters include, but are not limited to:**
+
+
+- learning_rate = 0.005
+In the classroom, it was mentioned that low learning rates converge better than high learning rates, although they are slower. 
+
+- batch_size = 48
+According to what Vincent said in the lectures about `SGD` and normal `gradient descent` it makes sense (to me at least) that trying to optimize the parameters of,for example, the whole data set at the same time, would be better since every input has a voice, thus we are able to have a democary and reach better weights. Using `SGD` although minimizes that for the favor of speed, i found it logical to have a batch size also high, following the logic stated above.
+
+- num_epochs = 20
+Monitoring the plotted losses each time i trained the network, i noticed that it was not necessary to have a high number of epochs (although it may be necessary for other cases) as the losses reached satisfactory levels relatively early.
+
+
+- Those remaining three parameters were left as was recommended, except number of workers was increased asi was training on a AWS instance, which had enough processing power and good hardware.
+
+- steps_per_epoch = 200
+- validation_steps = 50
+- workers = 4
 

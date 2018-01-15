@@ -12,6 +12,6 @@ The encoder stage is used for capturing the important features, with each deeper
 
 
 
-
+#add model architecture#
 
 

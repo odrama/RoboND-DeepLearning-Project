@@ -57,7 +57,7 @@ The model would not work well on any other object, since it was only trained to 
 Udacity default provided dataset
 
 
-During the early trials, i designed a small network, which could not give me good results, but after searching through slack and getting some advice, i implemented a deeper network, which increased the accuracy tremendously using only the provided dataset
+**During the early trials, i designed a small network, which could not give me good results, but after searching through slack and getting some advice, i implemented a deeper network, which increased the accuracy tremendously using only the provided dataset**
 
 
 **Future improvements**

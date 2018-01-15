@@ -27,7 +27,7 @@ According to what Vincent said in the lectures about `SGD` and normal `gradient 
 Monitoring the plotted losses each time i trained the network, i noticed that it was not necessary to have a high number of epochs (although it may be necessary for other cases) as the losses reached satisfactory levels relatively early.
 
 
-- Those remaining three parameters were left as was recommended, except number of workers was increased asi was training on a AWS instance, which had enough processing power and good hardware.
+Those remaining three parameters were left as was recommended, except number of workers was increased asi was training on a AWS instance, which had enough processing power and good hardware.
 
 - steps_per_epoch = 200
 - validation_steps = 50
